@@ -14,6 +14,8 @@ import { NavigationBarComponent } from './components/shared/navigation-bar/navig
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { HeroSearchResultComponent } from './components/hero-search-result/hero-search-result.component';
 
 
 @NgModule({
@@ -22,14 +24,16 @@ import { HeroesComponent } from './components/heroes/heroes.component';
     NavigationBarComponent,
     HomeComponent,
     AboutComponent,
-    HeroesComponent
+    HeroesComponent,
+    HeroComponent,
+    HeroSearchResultComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTING
   ],
   providers: [
-    HeroService
+    HeroService    
   ],
   bootstrap: [AppComponent]
 })
